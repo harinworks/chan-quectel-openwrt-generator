@@ -50,7 +50,7 @@ jobs:
           make -j4 V=s
           cd ..
           mkdir downloads
-          cp $(find $(pwd)/wrtsdk/bin/ -wholename *cusrepo/*.ipk) downloads/
+          cp $(find $(pwd)/wrtsdk/bin/ -wholename *cusrepo/*.[ai]pk) downloads/
       - name: Upload Artifact GitHub Action
         uses: actions/upload-artifact@v7
         with: 
